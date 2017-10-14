@@ -23,3 +23,9 @@ before_install:
 script:  
   - ./travis.sh 
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 069f1d922a68e07a800abab24fac58e4d0d84aaa # Set in travis-ci.org dashboard
+  on:
+    branch: master
