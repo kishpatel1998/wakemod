@@ -46,7 +46,7 @@ fi
 
 case $1 in
 clean)
-make ARCH=arm -j2 clean mrproper
+make ARCH=arm -j16 clean mrproper
 rm -rf include/linux/autoconf.h
 ;;
 *)
