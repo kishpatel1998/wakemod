@@ -24,8 +24,9 @@ script:
   - ./travis.sh 
 
 deploy:
-  provider: pages
+  provider: releases
+  api_key: "9c06237d612b5d6aab933acee3bb9a717b330a5e"
+  file: "arch/arm/boot/zImage"
   skip_cleanup: true
-  github_token: 069f1d922a68e07a800abab24fac58e4d0d84aaa # Set in travis-ci.org dashboard
   on:
-    branch: master
+    tags: true
