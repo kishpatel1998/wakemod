@@ -1010,6 +1010,10 @@ config MTK_EPL2182
 	bool "EPL2182 for MediaTek package"
 	default n
 
+config MTK_TMD2771_HW_AUTO
+	bool "MTK_TMD2771_HW_AUTO for MediaTek package"
+	default n
+
 config MTK_EPL2182_NEW
 	bool "EPL2182 for MediaTek package"
 	default n
@@ -1124,6 +1128,10 @@ config MTK_AKM8963_NEW
 	bool "AKM8963 for MediaTek package"
 	default n
 
+config MTK_AKM09911
+	bool "AKM09911 for MediaTek package"
+	default n
+
 config MTK_HSCDTD006
 	bool "HSCDTD006 for MediaTek package"
 	default n
@@ -1163,6 +1171,14 @@ config MTK_S2200
 config MTK_YAS532
         bool "YAS532 for Mediatek package"
         default n
+
+config MTK_MMA8452Q_AUTO
+	bool "MMA8452Q_AUTO for MediaTek package"
+	default n
+
+config MTK_KX023_AUTO
+	bool "KX023_AUTO for MediaTek package"
+	default n
 
 # Barometer sensor
 config MTK_BMP180_NEW
@@ -1768,6 +1784,8 @@ config MTK_LENS_GAF002AF_SUPPORT
 config MTK_LENS_GAF008AF_SUPPORT
 	bool "GAF008AF Lens Driver"
 	default n
+
+
 
 #
 # Camera EEPROM Calibration
