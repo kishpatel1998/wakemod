@@ -23,8 +23,7 @@ extern LCM_DRIVER otm8018b_wvga_dsi_vdo_dijing_lcm_drv;
 extern LCM_DRIVER otm8019a_wvga_dsi_vdo_dijing_lcm_drv;
 extern LCM_DRIVER hx8369b_wvga_dsi_vdo_tinno_drv;
 extern LCM_DRIVER hx8369b_wvga_dsi_vdo_tinno_txd_drv;
-
-
+extern LCM_DRIVER hx8394d_hd720_dsi_vdo_dijing_drv;
 
 
 LCM_DRIVER* lcm_driver_list[] = 
@@ -47,6 +46,10 @@ LCM_DRIVER* lcm_driver_list[] =
 
 #if defined(HX8369B_WVGA_DSI_VDO_TINNO_TXD) 
 	&hx8369b_wvga_dsi_vdo_tinno_txd_drv,
+#endif
+
+#if defined(HX8394D_HD720_DSI_VDO_DIJING) 
+	&hx8394d_hd720_dsi_vdo_dijing_drv,
 #endif
 
 };
