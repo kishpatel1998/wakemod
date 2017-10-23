@@ -35,7 +35,7 @@ compile_kernel ()
 echo -e "$blue***********************************************"
 echo "          Compiling WakeMod kernel          "
 echo -e "***********************************************$nocol"
-make a106_defconfig
+make holly_defconfig
 make -j2
 if ! [ -a $ZIMAGE ];
 then
@@ -46,7 +46,7 @@ fi
 
 case $1 in
 clean)
-make ARCH=arm -j16 clean mrproper
+make ARCH=arm -j2 clean mrproper
 rm -rf include/linux/autoconf.h
 ;;
 *)
