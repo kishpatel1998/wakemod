@@ -1088,3 +1088,4 @@ LCM_DRIVER hx8394d_hd720_dsi_vdo_dijing_drv =
 
 };
 
+

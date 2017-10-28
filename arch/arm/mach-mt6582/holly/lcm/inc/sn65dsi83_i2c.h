@@ -27,3 +27,4 @@ extern int sn65dsi83_write_byte(kal_uint8 cmd, kal_uint8 writeData);
 #endif
 #endif // _fan5405_SW_H_
 
+
